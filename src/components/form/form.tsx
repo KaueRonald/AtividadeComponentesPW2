@@ -1,22 +1,25 @@
 import React from 'react';
+import { Form, Button } from 'react-bootstrap';
 import './index.css';
 
 function MyForm() {
   return (
     <div className="form-container">
-      <form>
-        <div className="form-group">
-          <label htmlFor="name" className="form-label">Nome:</label>
-          <input type="text" id="name" className="form-control" />
-        </div>
+      <Form>
+        <Form.Group controlId="formName">
+          <Form.Label>Nome:</Form.Label>
+          <Form.Control type="text" />
+        </Form.Group>
 
-        <div className="form-group">
-          <label htmlFor="email" className="form-label">E-mail:</label>
-          <input type="email" id="email" className="form-control" />
-        </div>
+        <Form.Group controlId="formEmail">
+          <Form.Label>E-mail:</Form.Label>
+          <Form.Control type="email" />
+        </Form.Group>
 
-        <button type="submit" className="form-button">Enviar</button>
-      </form>
+        <Button variant="primary" type="submit">
+          Enviar
+        </Button>
+      </Form>
     </div>
   );
 }
