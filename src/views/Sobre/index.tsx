@@ -8,7 +8,6 @@ import style from "./sobre.module.css";
 export default function Sobre() {
     useEffect(() => {
         window.document.title = "Página Sobre"
-        document.body.style.backgroundColor = "#242424"
     }, [])
 
     return (
@@ -19,9 +18,12 @@ export default function Sobre() {
                 <h2>Desenvolvedores</h2>
 
                 <section className={style.devInfos}>
-                    <Messages devName="Matheus Nunes" message="Olá, seja Bem-Vindo(a) a nossa página!" />
-                    <Messages devName="Luis Felippe" message="Aqui você conhece um pouco sobre os responsáveis pelo desenvolvimento desse site" />
-                    <Messages devName="Kauê Ronald" message="Se divirta e aproveite para tirar dúvidas!" />
+                    <Messages devName="Matheus Nunes" message="Olá, seja Bem-Vindo(a) a nossa página!"
+                        image="https://avatars.githubusercontent.com/u/80282447?v=4" />
+                    <Messages devName="Luis Felippe" message="Aqui você conhece um pouco sobre os responsáveis pelo desenvolvimento desse site"
+                        image="https://avatars.githubusercontent.com/u/87948087?v=4" />
+                    <Messages devName="Kauê Ronald" message="Se divirta e aproveite para tirar dúvidas!"
+                        image="https://avatars.githubusercontent.com/u/87199965?v=4" />
                 </section>
             </section>
 
