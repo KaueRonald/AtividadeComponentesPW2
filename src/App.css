@@ -2,7 +2,8 @@
   margin: 0 auto;
   text-align: center;
   background-color: #242424;
-  color: white
+  color: white;
+  height: 100vh;
 }
 
 @keyframes logo-spin {
