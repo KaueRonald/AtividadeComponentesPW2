@@ -3,18 +3,19 @@ import style from "./messages.module.css"
 
 interface IProps {
     devName: string,
-    message: string
+    message: string,
+    image: string
 }
 
-export default function Messages({ devName, message }: IProps) {
+export default function Messages({ devName, message, image }: IProps) {
     return (
         <Toast className={style.messageContainer}>
             <Toast.Header>
-                <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+                <img src={image} className={style.devImage} alt="" />
                 <strong className="me-auto">{devName}</strong>
                 <small>11 mins ago</small>
             </Toast.Header>
-            <Toast.Body>{message}</Toast.Body>
+            <Toast.Body className={style.message}>{message}</Toast.Body>
         </Toast>
     );
 }
